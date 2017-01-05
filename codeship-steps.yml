@@ -4,6 +4,6 @@
   command: /bin/bash -c "cd deploy && serverless deploy --stage production"
 
 - service: awsdeployment
-  name: push_master_to_s3
+  name: serverless_deploy_staging
   tag: staging
   command: /bin/bash -c "cd deploy && serverless deploy --stage staging"
