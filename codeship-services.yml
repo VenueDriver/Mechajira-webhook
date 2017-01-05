@@ -1,0 +1,10 @@
+node:
+  build: .
+
+awsdeployment:
+  build: ./deployment
+  encrypted_env_file: deployment.env.encrypted
+  environment:
+    - AWS_DEFAULT_REGION=us-west-1
+  volumes:
+    - ./:/deploy
