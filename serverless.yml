@@ -5,14 +5,14 @@ provider:
   runtime: nodejs4.3
 
 functions:
-  single:
-    handler: single.handler
+  mechajira-loop:
+    handler: mechajira-loop-lambda.handler
     events:
       - http:
-          path: single
+          path: mechajira-loop-lambda
           method: get
       - http:
-          path: single
+          path: mechajira-loop-lambda
           method: post
   multiCreate:
     handler: multiCreate.handler
