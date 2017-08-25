@@ -3,6 +3,11 @@ service: serverless-starter
 provider:
   name: aws
   runtime: nodejs4.3
+  environment:
+    HOST: ${file(../jira.yml):host}
+    PORT: ${file(../jira.yml):port}
+    USERNAME: ${file(../jira.yml):username}
+    PASSWORD: ${file(../jira.yml):password}
 
 functions:
   mechajira-loop:

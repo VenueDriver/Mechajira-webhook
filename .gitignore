@@ -65,6 +65,7 @@ _meta
 .serverless
 /deployment.env
 /codeship.aes
+jira.yml
 =======
 # Dependency directories
 node_modules/
